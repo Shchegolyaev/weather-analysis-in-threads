@@ -1,11 +1,21 @@
 import concurrent.futures
 import json
-import logging
 import multiprocessing
 from datetime import datetime
 
 from api_client import YandexWeatherAPI
 from utils import CITIES
+from logger import logging
+from pydantic import BaseModel
+
+
+class ResponseDataModel(BaseModel):
+    forecasts: list
+
+
+class ForecastsModel(BaseModel):
+    date: str
+    hours: list
 
 
 class DataFetchingTask:
@@ -28,8 +38,8 @@ class DataFetchingTask:
                     logging.info(f"Город {city_name} добавлен в пул задач.")
                 for city_name, future in futures.items():
                     data[f"{city_name}"] = future.result()
-                    logging.info(f"Получены даные для города {city_name}.")
-        except Exception as error:
+                    logging.info(f"Получены данные для города {city_name}.")
+        except (RuntimeError, KeyError, ImportError) as error:
             logging.error(f"Ошибка в процессе получения информации: {error}.")
         return data
 
@@ -48,11 +58,13 @@ class DataCalculationTask:
                 city_name,
             ]
         )
-        for day in data_for_city["forecasts"]:
+        response_data_model = ResponseDataModel(**data_for_city)
+        for day in response_data_model.forecasts:
             sum_temp = 0
             hour_without_rain = 0
             count_hour_calc = 0
-            for hour in day["hours"]:
+            forecast_model = ForecastsModel(**day)
+            for hour in forecast_model.hours:
                 if 9 <= int(hour["hour"]) < 19:
                     count_hour_calc += 1
                     sum_temp += int(hour["temp"])
@@ -64,7 +76,7 @@ class DataCalculationTask:
                     ):
                         hour_without_rain += 1
 
-            date_input = datetime.strptime(day["date"], "%Y-%m-%d")
+            date_input = datetime.strptime(forecast_model.date, "%Y-%m-%d")
             if count_hour_calc == 0:
                 count_hour_calc += 1
 
@@ -92,7 +104,7 @@ class DataAggregationTask:
 
     def save_to_json(self, info: list) -> None:
         with open("data_file.json", "w") as write_file:
-            json.dump(info, write_file)
+            json.dump(info, write_file, indent=4)
         logging.info("Выолнено создание файла.")
 
 
@@ -154,13 +166,6 @@ class DataAnalyzingTask:
 
 
 if __name__ == "__main__":
-    logging.basicConfig(
-        filename="tasks_logs.log",
-        filemode="w",
-        format="%(name)s - %(levelname)s - %(message)s",
-        level=logging.DEBUG,
-    )
-
     logging.info("Старт программы.")
     data = DataFetchingTask().get_data()
 
