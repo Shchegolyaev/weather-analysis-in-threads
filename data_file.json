@@ -1,0 +1,362 @@
+[
+    {
+        "MOSCOW": {
+            "26-05": {
+                "mid_temp": 18.0,
+                "hour_without_rain": 7
+            },
+            "27-05": {
+                "mid_temp": 13.1,
+                "hour_without_rain": 0
+            },
+            "28-05": {
+                "mid_temp": 12.2,
+                "hour_without_rain": 0
+            },
+            "29-05": {
+                "mid_temp": 12.0,
+                "hour_without_rain": 1
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "PARIS": {
+            "26-05": {
+                "mid_temp": 17.4,
+                "hour_without_rain": 8
+            },
+            "27-05": {
+                "mid_temp": 17.2,
+                "hour_without_rain": 10
+            },
+            "28-05": {
+                "mid_temp": 17.0,
+                "hour_without_rain": 10
+            },
+            "29-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "LONDON": {
+            "26-05": {
+                "mid_temp": 17.3,
+                "hour_without_rain": 10
+            },
+            "27-05": {
+                "mid_temp": 16.2,
+                "hour_without_rain": 10
+            },
+            "28-05": {
+                "mid_temp": 14.7,
+                "hour_without_rain": 10
+            },
+            "29-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "BERLIN": {
+            "26-05": {
+                "mid_temp": 19.2,
+                "hour_without_rain": 8
+            },
+            "27-05": {
+                "mid_temp": 16.1,
+                "hour_without_rain": 6
+            },
+            "28-05": {
+                "mid_temp": 13.7,
+                "hour_without_rain": 0
+            },
+            "29-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "BEIJING": {
+            "26-05": {
+                "mid_temp": 32.1,
+                "hour_without_rain": 10
+            },
+            "27-05": {
+                "mid_temp": 32.8,
+                "hour_without_rain": 10
+            },
+            "28-05": {
+                "mid_temp": 33.8,
+                "hour_without_rain": 10
+            },
+            "29-05": {
+                "mid_temp": 28.2,
+                "hour_without_rain": 6
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "KAZAN": {
+            "26-05": {
+                "mid_temp": 12.6,
+                "hour_without_rain": 6
+            },
+            "27-05": {
+                "mid_temp": 13.7,
+                "hour_without_rain": 0
+            },
+            "28-05": {
+                "mid_temp": 14.7,
+                "hour_without_rain": 3
+            },
+            "29-05": {
+                "mid_temp": 14.0,
+                "hour_without_rain": 1
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "SPETERSBURG": {
+            "26-05": {
+                "mid_temp": 12.3,
+                "hour_without_rain": 3
+            },
+            "27-05": {
+                "mid_temp": 11.9,
+                "hour_without_rain": 0
+            },
+            "28-05": {
+                "mid_temp": 11.6,
+                "hour_without_rain": 0
+            },
+            "29-05": {
+                "mid_temp": 12.0,
+                "hour_without_rain": 1
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "VOLGOGRAD": {
+            "26-05": {
+                "mid_temp": 22.1,
+                "hour_without_rain": 10
+            },
+            "27-05": {
+                "mid_temp": 21.9,
+                "hour_without_rain": 10
+            },
+            "28-05": {
+                "mid_temp": 25.7,
+                "hour_without_rain": 10
+            },
+            "29-05": {
+                "mid_temp": 25.0,
+                "hour_without_rain": 1
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "NOVOSIBIRSK": {
+            "26-05": {
+                "mid_temp": 24.9,
+                "hour_without_rain": 10
+            },
+            "27-05": {
+                "mid_temp": 22.3,
+                "hour_without_rain": 10
+            },
+            "28-05": {
+                "mid_temp": 23.1,
+                "hour_without_rain": 10
+            },
+            "29-05": {
+                "mid_temp": 22.2,
+                "hour_without_rain": 5
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "KALININGRAD": {
+            "26-05": {
+                "mid_temp": 15.5,
+                "hour_without_rain": 8
+            },
+            "27-05": {
+                "mid_temp": 12.9,
+                "hour_without_rain": 2
+            },
+            "28-05": {
+                "mid_temp": 11.6,
+                "hour_without_rain": 1
+            },
+            "29-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "ABUDHABI": {
+            "26-05": {
+                "mid_temp": 35.0,
+                "hour_without_rain": 10
+            },
+            "27-05": {
+                "mid_temp": 34.7,
+                "hour_without_rain": 10
+            },
+            "28-05": {
+                "mid_temp": 34.1,
+                "hour_without_rain": 10
+            },
+            "29-05": {
+                "mid_temp": 34.0,
+                "hour_without_rain": 2
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "WARSZAWA": {
+            "26-05": {
+                "mid_temp": 19.7,
+                "hour_without_rain": 10
+            },
+            "27-05": {
+                "mid_temp": 14.0,
+                "hour_without_rain": 2
+            },
+            "28-05": {
+                "mid_temp": 12.9,
+                "hour_without_rain": 0
+            },
+            "29-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "BUCHAREST": {
+            "26-05": {
+                "mid_temp": 27.5,
+                "hour_without_rain": 10
+            },
+            "27-05": {
+                "mid_temp": 26.0,
+                "hour_without_rain": 10
+            },
+            "28-05": {
+                "mid_temp": 27.9,
+                "hour_without_rain": 10
+            },
+            "29-05": {
+                "mid_temp": 18.0,
+                "hour_without_rain": 1
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "ROMA": {
+            "26-05": {
+                "mid_temp": 29.2,
+                "hour_without_rain": 10
+            },
+            "27-05": {
+                "mid_temp": 29.5,
+                "hour_without_rain": 10
+            },
+            "28-05": {
+                "mid_temp": 25.8,
+                "hour_without_rain": 10
+            },
+            "29-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    },
+    {
+        "CAIRO": {
+            "26-05": {
+                "mid_temp": 32.6,
+                "hour_without_rain": 10
+            },
+            "27-05": {
+                "mid_temp": 33.2,
+                "hour_without_rain": 10
+            },
+            "28-05": {
+                "mid_temp": 34.5,
+                "hour_without_rain": 10
+            },
+            "29-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            },
+            "30-05": {
+                "mid_temp": 0.0,
+                "hour_without_rain": 0
+            }
+        }
+    }
+]

@@ -35,7 +35,8 @@ class YandexWeatherAPI:
         try:
             return CITIES[city_name]
         except KeyError:
-            raise Exception("Please check that city {} exists".format(city_name))
+            raise Exception("Please check that city {} "
+                            "exists".format(city_name))
 
     def get_forecasting(self, city_name: str):
         """
